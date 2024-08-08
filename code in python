@@ -1,0 +1,18 @@
+import random 
+random = random.randint(1, 100)
+a=0
+guess = 1
+while(a != random):
+    
+    a = int(input("Enter the Value from 1 to 100 to guess?"))
+
+    if (a > random):
+        print("You have choosen the number Higher than computer Guess lower")
+        guess+=1 
+    elif (a < random):
+        print("You have choosen the number lower than the computer Guess Higher")
+        guess+=1 
+   
+
+print(f"congratulation you got it cpu no is {random} and your guesses are {guess}")
+        
